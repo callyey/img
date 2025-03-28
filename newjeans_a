@@ -1,4 +1,0 @@
-!/bin/bash
-awk -F, '{if ($2 !~ /2/ && $2 !~ /_/) {print $2}} DataStreamer.csv | sort 
-jumlah=$(awk -F, '{if ($2 !~ /2/ && $2 !~ /_/) {print $2}}' DataStreamer.csv | sort | wc -l)
-  echo "Jumlah user = $jumlah"
